@@ -1,0 +1,9 @@
+# Build Output
+build/
+*.o
+*.elf
+*.bin
+*.hex
+*.map
+
+.vscode/
