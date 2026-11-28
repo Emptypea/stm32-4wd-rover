@@ -11,7 +11,7 @@ void Reset_Handler(void);
 //      4. Last Byte = 0x20004FFF.
 //  Entry 1: reset vector = address of Reset_Handler (filled in by the toolchain).
 
-uint32_t vector_table[] __attribute__((section(".isr_vector"))) = {0x20005000, (uint32_t)Reset_Handler};
+const uint32_t vector_table[] __attribute__((section(".isr_vector"))) = {0x20005000, (uint32_t)Reset_Handler};
 
 void Reset_Handler(void){
     while(true);
